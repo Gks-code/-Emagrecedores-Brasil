@@ -47,6 +47,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.5;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -71,7 +73,13 @@ button {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 24px;
+    }
 }
 
 /* Typography */
@@ -280,7 +288,8 @@ h4 {
    Synedica Hero Styles
 ------------------------------------- */
 .hero.synedica-hero {
-    padding: 32px 16px;
+    padding: 32px 0;
+    /* Padding horizontal zero pois .container já tem */
     background-color: var(--color-surface-light);
 }
 
@@ -374,8 +383,14 @@ h4 {
     /* very light green */
     border: 1px solid rgba(39, 176, 125, 0.3);
     border-radius: var(--radius-xl);
-    padding: 24px;
+    padding: 16px;
     margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .pricing-box {
+        padding: 24px;
+    }
 }
 
 .old-price {
@@ -463,8 +478,15 @@ h4 {
 }
 
 .btn-lg {
-    padding: 16px 32px;
-    font-size: 1.125rem;
+    padding: 14px 20px;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .btn-lg {
+        padding: 16px 32px;
+        font-size: 1.125rem;
+    }
 }
 
 .btn-block {
@@ -526,8 +548,14 @@ h4 {
     background-color: #ffffff;
     border: 1px solid rgba(39, 176, 125, 0.2);
     border-radius: var(--radius-xl);
-    padding: 20px;
+    padding: 16px;
     box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 768px) {
+    .info-box {
+        padding: 24px;
+    }
 }
 
 .text-sm {
