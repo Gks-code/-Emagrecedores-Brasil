@@ -280,8 +280,14 @@ h4 {
    Synedica Hero Styles
 ------------------------------------- */
 .hero.synedica-hero {
-    padding: 60px 24px;
+    padding: 32px 16px;
     background-color: var(--color-surface-light);
+}
+
+@media (min-width: 768px) {
+    .hero.synedica-hero {
+        padding: 60px 24px;
+    }
 }
 
 .hero-grid-synedica {
@@ -309,18 +315,39 @@ h4 {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+    .badge-fire {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-left {
+        display: block;
+    }
 }
 
 .synedica-hero h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: var(--color-text-dark);
-    line-height: 1.1;
+    line-height: 1.2;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 @media (min-width: 1024px) {
     .synedica-hero h1 {
         font-size: 3rem;
+        text-align: left;
     }
 }
 
@@ -333,6 +360,13 @@ h4 {
     color: var(--color-text-muted);
     margin-bottom: 24px;
     line-height: 1.6;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .hero-subtitle {
+        text-align: left;
+    }
 }
 
 .pricing-box {
@@ -365,9 +399,15 @@ h4 {
 }
 
 .current-price .value {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 900;
     line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .current-price .value {
+        font-size: 3.5rem;
+    }
 }
 
 .current-price .unit {
