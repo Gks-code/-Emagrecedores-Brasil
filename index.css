@@ -1,21 +1,21 @@
 /* Base Styles & Reset */
 :root {
-    --color-primary: #7C3AED;
+    --color-primary: #FF7300;
     /* Laranja Vibrante */
-    --color-primary-hover: #5B21B6;
-    /* Laranja Escuro */
-    --color-bg-light: #FAFAFA;
-    /* Off-white background */
+    --color-primary-hover: #FF8C33;
+    /* Laranja Claro */
+    --color-bg-light: #FFF3E6;
+    /* Fundo Suave */
     --color-surface-light: #FFFFFF;
     /* Pure white surface */
-    --color-text-dark: #1F262E;
-    /* Darker text */
-    --color-text-muted: #4B5563;
-    /* Gray text */
-    --color-text-light: #6B7280;
-    /* Lighter gray */
-    --color-border: #E5E7EB;
-    /* Soft border */
+    --color-text-dark: #331700;
+    /* Texto Escuro */
+    --color-text-muted: #85522e;
+    /* Texto secundário */
+    --color-text-light: #a67c63;
+    /* Texto claro */
+    --color-border: #ffd5b3;
+    /* Borda suave laranja */
 
     --font-display: 'Poppins', sans-serif;
 
